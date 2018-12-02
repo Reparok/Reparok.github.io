@@ -29,8 +29,12 @@ html,body {
 	align-items: center;
 }
 .nutmo i,.nutdong i {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom:10px;
 	color: white;
-	font-size: 20px;
+	font-size: 30px;
+	margin: 0 auto;
 }
 .nutdong{
 	height: 50px;
