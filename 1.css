@@ -67,11 +67,14 @@ html,body {
 	background-attachment: fixed;
 
 }
-.nutdong,.nutmo {
-	background:#FFC75F;
-	width: 40px;
+.nutmo,.nutdong {
 	height: 40px;
+	width: 40px;
+	background: #FFC75F;
 	line-height: 40px;
+}
+.nutmo i,.nutdong i {
+	font-size: 20px;
 }
 
 }
