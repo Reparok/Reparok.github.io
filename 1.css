@@ -1,81 +1,97 @@
-*{margin: 0; padding: 0;}
-:root {
-	--mamau1:#008F7A;
-	--mamau2:#FFC75F;
-}
+*{margin: 0; padding: 0;} 
 html,body {
+	height: 100%;
 	width: 100%;
-	height:100%;
-	background: url(images/bg-home2.jpg);
+}
+.top {
+	height: 100%;
+	width: 100%;
+	background: url(images/bg-home.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
+	position: relative;
 }
-.top{
+.top h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	transform: translate(-50%,-50%);
+}
+.top .menu {
+	height: 40px;
+	width: 350px;
+	position: absolute;
+	top: 5px;
+	right:5px;
+}
+.top .menu ul {
+	display: flex;
+	list-style: none;	
+}
+.top .menu ul li {
 
-} 
+}
+.top .menu ul li a {
+
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	transition: 0.4s;
+}
+.top .menu ul li a:hover {
+	color: silver;
+}
 .nutmo {
+	position: absolute;
+	top: 10px;
+	left: -50px;
 	height: 50px;
 	width: 50px;
-	background: #008F7A;
-	line-height: 50px;
-	text-align: center;
+	background:#0081CF;
 	border-radius: 50%;
-	position: absolute;
-	top: 15px;
-	left: 15px;
 	z-index: 2;
 	cursor: pointer;
-	align-items: center;
+	transition: 0.4s;
+	text-align: center;
 }
 .nutmo i,.nutdong i {
-	display: block;
-	padding-top: 10px;
-	padding-bottom:10px;
+	font-size: 20px;
 	color: white;
-	font-size: 30px;
-	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom:15px;
 }
-.nutdong{
+.nutdong {
+	position: absolute;
+	top: 10px;
+	left: -50px;
 	height: 50px;
 	width: 50px;
-	background: #008F7A;
-	line-height: 50px;
-	text-align: center;
+	background:#0081CF;
 	border-radius: 50%;
-	position: absolute;
-	top: 15px;
-	left: -50px;
 	z-index: 1;
 	cursor: pointer;
+	opacity: 0;
+	transition: 0.4s;
+	text-align: center;
 }
 @keyframes rotate360 {
 	100% { transform: rotate(360deg); }
 }
 .xoay {
 	animation-name: rotate360;
-	animation-duration: 1s;
+	animation-duration: 2s;
 }
+
 @media only screen and (max-width:575px) {
-	html,body {
-	width: 100%;
-	height:100%;
-	background: url(images/bg-home.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
+	.top .menu {
+		top:-40px;
+	}
+	.nutmo {
+		left: 10px;
+	}
 
 }
-.nutmo,.nutdong {
-	height: 40px;
-	width: 40px;
-	background: #FFC75F;
-	line-height: 40px;
-}
-.nutmo i,.nutdong i {
-	font-size: 20px;
-}
 
-}
