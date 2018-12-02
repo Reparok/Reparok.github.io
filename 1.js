@@ -5,7 +5,7 @@
  			opacity: 0
  		});
  		$('.nutdong').animate({
- 			left:20,
+ 			left:15,
  			opacity:1
  		});
  		$('.nutdong i').addClass('xoay');
@@ -19,7 +19,7 @@
  			opacity:0
  		});
  		$('.nutmo').animate({
- 			left:20,
+ 			left:15,
  			opacity:1
  		});
  	});

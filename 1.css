@@ -1,6 +1,7 @@
 *{margin: 0; padding: 0;}
 :root {
-	--mamau1:;
+	--mamau1:#008F7A;
+	--mamau2:#FFC75F;
 }
 html,body {
 	width: 100%;
@@ -22,14 +23,14 @@ html,body {
 	text-align: center;
 	border-radius: 50%;
 	position: absolute;
-	top: 20px;
-	left: 20px;
+	top: 15px;
+	left: 15px;
 	z-index: 2;
 	cursor: pointer;
 	align-items: center;
 }
 .nutmo i,.nutdong i {
-	display: inline-block;
+	display: block;
 	padding-top: 10px;
 	padding-bottom:10px;
 	color: white;
@@ -44,17 +45,17 @@ html,body {
 	text-align: center;
 	border-radius: 50%;
 	position: absolute;
-	top: 20px;
+	top: 15px;
 	left: -50px;
 	z-index: 1;
 	cursor: pointer;
 }
 @keyframes rotate360 {
-	50% { transform: rotate(180deg); }
+	100% { transform: rotate(360deg); }
 }
 .xoay {
 	animation-name: rotate360;
-	animation-duration: 1.5s;
+	animation-duration: 1s;
 }
 @media only screen and (max-width:575px) {
 	html,body {
